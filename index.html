@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradize</title>
+    <title>BORJOMI</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src ="./libs/gsap/gsap.min.js" defer></script>
     <script src ="./libs/gsap/ScrollTrigger.min.js" defer></script>
@@ -22,6 +22,8 @@
     <script src="./js/scroll-top.js" defer></script>
 </head>
 <body>
+
+
 
     <ul class = "contacts">
         <li class = "link"><a href = "https://www.instagram.com/borjomi_russia" target="_blank" draggable="false"><img src = "./img/icons/inst_1.svg" draggable="false"></a></li>
@@ -233,7 +235,7 @@
               <li><a href="https://developer.mozilla.org/ru/docs/Web" target="_blank">Web Technologies</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Learn Web Development</a></li>
               <li><a href="https://developer.mozilla.org/ru/" target="_blank">About MDN</a></li>
-              <li><a href="https://www.instagram.com/ne_solek" target="_blank">Feedback</a></li>
+              <li><a href="/public/feedback.html"">Feedback</a></li>
             </ul>
             <p>
               © 2005-2022 Mozilla and individual contributors. Content is available
@@ -246,7 +248,25 @@
 </div>
 
 
+<script>
 
+document.onkeydown = keydown;
+
+function keydown(evt){
+  if (!evt) evt = event;
+  if (evt.shiftKey && evt.keyCode==49){ //SHIFT+1
+    window.location.href = "https://www.instagram.com/borjomi_russia";
+  }
+  else if (evt.shiftKey && evt.keyCode==50){ //Shif+2
+    window.location.href = "https://www.facebook.com/BorjomiRussia";
+    
+  }
+  else if(evt.shiftKey && evt.keyCode==51){
+    window.location.href = "https://borjomi.ru/contacts/"
+  }
+}
+
+</script>
 
 </body>
 </html>
